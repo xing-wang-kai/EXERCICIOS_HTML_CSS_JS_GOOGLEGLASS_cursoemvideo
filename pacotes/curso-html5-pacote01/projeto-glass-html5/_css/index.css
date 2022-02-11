@@ -1,0 +1,81 @@
+body{
+  background-color: white;
+  color: rgba(0,0,0 1)
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/*formatting images in css*/
+.photos_with_captions{
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+.photos_with_captions img{
+  width: 100%;
+  height: 100%;
+}
+.photos_with_captions figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  color: White;
+  background-color: rgba(0,0,0, 0.4);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: 1s;
+}
+.photos_with_captions figcaption:hover{
+  opacity: 100%;
+  transition: 1s;
+}
+
+/*formatting for the menu  in css*/
+
+.menu {
+  display: block;
+}
+
+.menu ul {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  text-transform: uppercase;
+  list-style: none;
+}
+.menu li{
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+
+  color: white;
+  background-color: #B3B3B4;
+  transition: 1.5s;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 6px;
+}
+.menu li:hover{
+  background-color: white;
+  color: #B3B3B4;
+  transform: scale(1.1);
+  transition: 1s;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu a:hover {
+  color: #B3B3B4;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.menu h1 {
+  display: none;
+}
