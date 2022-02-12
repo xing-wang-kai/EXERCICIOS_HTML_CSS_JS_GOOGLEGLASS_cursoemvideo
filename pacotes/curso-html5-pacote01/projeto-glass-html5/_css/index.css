@@ -1,13 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap');
+@font-face {
+  font-family: 'fontlogo';
+  src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
 body{
-  background-color: white;
+  font-family: Arial, sans-serif;
+  background-color: #dddddd;
   color: rgba(0,0,0 1)
 }
 
 p {
   text-align: justify;
   text-indent: 50px;
+  font-size: 1rem;
+}
+.interface{
+  width: 70%;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+a {
+  text-decoration:none;
+  color: #606060;
+}
+/*formatting for the header  in css*/
+.thisheader{
+  display: block;
+  border-bottom: 1px solid #606060;
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0 100px;
+}
+.thisheader h1{
+  font-family: 'fontlogo', sans-serif;
+  font-size: 30px;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+.thisheader h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15pt;
+  color: #888888;
+  margin-top: 0;
+}
+.headerfig {
+  position: absolute;
+  right: 8%;
+  top:15%;
+}
 /*formatting images in css*/
 .photos_with_captions{
   position: relative;
@@ -34,6 +81,81 @@ p {
   opacity: 100%;
   transition: 1s;
 }
+.tableaspect {
+  border: 1px solid #606060;
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableaspect td{
+  border: 1px solid #606060;
+  padding: 10px;
+}
+.tdleft {
+  text-align: right;
+  background-color: #606060;
+  color: white;
+  text-align: top;
+  font-weight: bold;
+}
+.tdright {
+  text-align: left;
+  background-color: #cecece;
+}
+.tableaspect caption {
+  color: #888888;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tableaspect span{
+  color: black;
+  display: block;
+  float: right;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.mainbody {
+  display: block;
+  width: 52%;
+  float: left;
+  padding: 3%;
+  border-right: 1px solid #606060;
+}
+
+.mainbody hgroup h1 {
+  font-family: 'fontlogo', sans-serif;
+  font-size: 26px;
+  color: #606060;
+  margin-bottom: 0;
+}
+.mainbody hgroup h3 {
+  margin-top: 0;
+  font-size: 12pt;
+
+  color: #888888;
+}
+  .mainbody hgroup h3 span{
+    display: block;
+    float: right;
+    margin-top:auto;
+    font-style: italic;
+    font-size: 9pt;
+    color: #606060;
+  }
+.mainbody hgroup h2 {
+  margin-top: 0;
+  font-size: 12pt;
+  color: #888888;
+
+}
+video source{
+  padding-left: auto;
+  padding-right: auto;
+  align-items: center;
+  width: 100%;
+}
 
 /*formatting for the menu  in css*/
 
@@ -44,7 +166,7 @@ p {
 .menu ul {
   position: absolute;
   top: -20px;
-  right: 0;
+  right: 20%;
   text-transform: uppercase;
   list-style: none;
 }
@@ -78,4 +200,49 @@ p {
 
 .menu h1 {
   display: none;
+}
+/*formatting for the main  in css*/
+
+.mainside {
+  display: block;
+  width: 35%;
+  float: right;
+  padding: 3%;
+}
+.mainfooter{
+  clear: both;
+  border-top: 1px solid #606060;
+  padding-top: 5%;
+}
+.mainfooter p{
+  text-align: center;
+}
+
+article h2, article h1 {
+  background-color: #D9D9D9;
+  color: #606060;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+.mainside {
+  background-color: #D9D9D9;
+  margin-top: 5%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mainside h2{
+  background-color: #606060;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1em;
+}
+
+.mainside h1{
+  font-family: 'fontlogo', sans-serif;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  color: #606060;
 }

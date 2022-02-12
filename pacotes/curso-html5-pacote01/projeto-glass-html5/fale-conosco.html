@@ -1,47 +1,112 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="_css/specs.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <title>Tudo Sobre Google Glass</title>
+  </head>
+  <body>
+    <div class="interface">
+      <header class="thisheader">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>The Google revolution is coming </h2>
+        </hgroup>
+        <figure class="headerfig">
+          <img src="_imagens/contato.png" alt="Google Glass Black" class="menuimg">
+          <figcaption>Google Glass</figcaption>
+        </figure>
 
-[AQUI ENTRA UMA FOTO]
+        <nav class="menu">
+          <h1>Main menu</h1>
+          <ul>
+            <li><a href="index.html"  onmousemove="changeImg(0)" onmouseout="changeImg(4)">Home</a></li>
+            <li><a href="specs.html" onmousemove="changeImg(1)" onmouseout="changeImg(4)">Specifications</a></li>
+            <li><a href="fotos.html" onmousemove="changeImg(2)" onmouseout="changeImg(4)">Photos</a></li>
+            <li><a href="multimidia.html" onmousemove="changeImg(3)" onmouseout="changeImg(4)">Multimedia</a></li>
+            <li><a href="fale-conosco.html" onmousemove="changeImg(4)" onmouseout="changeImg(4)">Contact us</a></li>
+          </ul>
+        </nav>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+      </header>
+      <main>
+        <section class="aspct_body">
+          <section class="aspectsmanbody">
+            <hgroup>
+              <h3>Contact Us > Contact</h3>
+              <h1>Contact Form</h1>
+              <h2>by Gustavo Guanabara</h2>
+              <h3><span>Updated on 01/fev/2022</span></h3>
+            </hgroup>
+            <form class="formdata" action="mailto:contato@cursosemvideo.com" method="post">
+              <fieldset class="user">
+                <legend>User ID</legend>
+                  <p>Name: <input type="text" name="tname" value="" id="cname" placeholder="complet name" maxlength="20" width="20"> </p>
+                  <p>Password: <input type="password" name="tpasswor" value="" id="cpassword" placeholder="your password"> </p>
+                  <p>Email: <input type="email" name="temail" value="" id="cemail" placeholder="www.example@example.com"> </p>
+                  <fieldset id="fieldsex">
+                    <legend>Sex:</legend>
+                    <label for="cmasculino">Masculine</label>
+                        <input type="radio" name="tsex" value="" id="cmasculino" checked></br>
+                      <label for="cfeminino">Feminine</label>
+                        <input type="radio" name="tsex" value="" id="cfeminino"></br>
+                  </fieldset>
+                     <p>Birth date: <input type="date" name="tbirthday" value="" id="cbirthday"> </p>
+              </fieldset>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+              <fieldset class="address">
+                <legend>User Address</legend>
+                  <p>Public place: <input type="text" name="taddress" value="" id="caddress"> </p>
+                  <p>Number: <input type="number" name="tnumber" value="" id="cnumber"> </p>
+                  <p><label for="cstate">State:</label> <select class="jstate" name="tstate" id="cstate">
+                    <optgroup label="">
+                      <option value="RJ" selected>Rio de Janeiro</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="">Manaus</option>
+                    </optgroup>
+                  </select> </p>
+                  <p><label for="ccity">City:</label>
+                    <input type="text" name="tcity" value="" id="ccity" placeholder="Your city" list="Jcidade">
+                    <datalist id="Jcidade">
+                        <option value="Rio de janeiro"></option>
+                        <option value="Niteroi"></option>
+                        <option value="Nova Iguaçu"></option>
+                    </datalist>
+                  </p>
+              </fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+              <fieldset class="message">
+                <legend>User Message</legend>
+                  <p><label for="degree">Degree of Urgency:</label>MIN <input type="range" name="tdegree" value="" id="degree" min="0" max="10">MAX </p>
+                  <p><label for="message">Message:</label><textarea name="tmessage" value="" id="message" cols="45" rows="5"></textarea>  </p>
+              </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+              <fieldset class="required">
+                <legend>I want a Google Glass</legend>
+                    <p><input type="checkbox" name="" value="" id="ccheck">
+                    <label for="cchek">I would like to purchase a Google Glass when available</label></p>
+                     <p><label for="ccolor">Color:</label><input type="color" name="" value="" id="ccolor"></p>
+                     <p><label for="">The amount:</label><input type="amount" name="" value=""></p>
+                     <p><label for="">Total Price: BRL</label> <input type="Price" name="" value=""></p>
+              </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+                <input type="image" src="_imagens/botao-enviar.png" name="" value="">
+            </form>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+              </section>
+            </section>
+      </main>
+        <footer class="mainfooter">
+          <p>&copy; Copyright 2013 - by Gustavo Guanabara</p>
+          <p><a href="#www.facebook.com/cursosemvideo">Facebook</a> | <a href="#www.twitter.com/cursosemvideo">twitter</a></p>
+        </footer>
+      </div>
+      <script src="_javascript/index.js">
 
-
-[BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+      </script>
+    </body>
+  </html>
